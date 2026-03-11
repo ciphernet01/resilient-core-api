@@ -133,5 +133,5 @@ I could prepare the application in this workspace, but publishing to GitHub and 
 
 Add the final items below after deployment:
 
-- Live URL: _to be added_
-- Public GitHub repository: _to be added_
+- Live URL: _to be added after deployment_
+- Public GitHub repository: https://github.com/ciphernet01/resilient-core-api
