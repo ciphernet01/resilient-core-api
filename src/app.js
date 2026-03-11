@@ -14,6 +14,19 @@ app.use(cors({ origin: corsOrigin }));
 app.use(express.json({ limit: '50kb' }));
 app.use(morgan('dev'));
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Resilient Core API',
+    docs: {
+      health: '/api/health',
+      register: 'POST /api/auth/register',
+      login: 'POST /api/auth/login',
+      projects: '/api/projects (requires auth)'
+    }
+  });
+});
+
 app.use('/api', routes);
 
 app.use((req, res, next) => {
