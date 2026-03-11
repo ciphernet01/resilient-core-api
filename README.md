@@ -127,11 +127,7 @@ This codebase is ready for deployment on Render or Railway:
 4. Set the start command to `npm start`.
 5. Configure environment variables from `.env.example`.
 
-## Submission Notes
-
-I could prepare the application in this workspace, but publishing to GitHub and deploying to a hosting provider must be done from an account with your credentials.
-
-Add the final items below after deployment:
+## Submission
 
 - **Live URL:** https://resilient-core-api.onrender.com
 - **Public GitHub Repository:** https://github.com/ciphernet01/resilient-core-api
