@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: resilient-core-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 1d
+      - key: DATA_FILE
+        value: ./data/db.json
+      - key: CORS_ORIGIN
+        value: "*"
